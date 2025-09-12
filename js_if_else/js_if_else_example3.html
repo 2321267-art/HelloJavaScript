@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>JavaScript Arithmetic</h1>
+    <h2>Arithmetic Operations</h2>
+    <p>A typical arithmetic operation takes two numbers (or expressions) and produces a new number.</p>
+    <p id="demo"></p>
+ <script>
+const time = new Date().getHours();
+
+let greeting;
+
+if (time < 10) {
+
+  greeting = "Good morning";
+
+} else if (time < 20) {
+
+  greeting = "Good day";
+
+} else {
+
+  greeting = "Good evening";
+
+}
+
+document.getElementById("demo").innerHTML = greeting;
+ </script>
+</body>
+</html>

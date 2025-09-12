@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>JavaScript Arithmetic</h1>
+    <h2>Arithmetic Operations</h2>
+    <p>A typical arithmetic operation takes two numbers (or expressions) and produces a new number.</p>
+    <p id="demo"></p>
+ <script>
+function myFunction() {
+
+  const message = document.getElementById("p01");
+
+  message.innerHTML = "";
+
+  let x = document.getElementById("demo").value;
+
+  try { 
+
+    if(x.trim() == "")  throw "is empty";
+
+    if(isNaN(x)) throw "is not a number";
+
+    x = Number(x);
+
+    if(x > 10)   throw "is too high";
+
+    if(x < 5)  throw "is too low";
+
+  }
+
+  catch(err) {
+
+    message.innerHTML = "Input " + err;
+
+  }
+
+  finally {
+
+    document.getElementById("demo").value = "";
+
+  }
+
+}
+ </script>
+</body>
+</html>

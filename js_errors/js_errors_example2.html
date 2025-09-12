@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>JavaScript Arithmetic</h1>
+    <h2>Arithmetic Operations</h2>
+    <p>A typical arithmetic operation takes two numbers (or expressions) and produces a new number.</p>
+    <p id="demo"></p>
+ <script>
+function myFunction() {
+
+  const message = document.getElementById("p01");
+
+  message.innerHTML = "";
+
+  let x = document.getElementById("demo").value;
+
+  try { 
+
+    if(x.trim() == "")  throw "empty";
+
+    if(isNaN(x)) throw "not a number";
+
+    x = Number(x);
+
+    if(x < 5)  throw "too low";
+
+    if(x > 10)   throw "too high";
+
+  }
+
+  catch(err) {
+
+    message.innerHTML = "Input is " + err;
+
+  }
+
+}
+ </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>JavaScript Arithmetic</h1>
+    <h2>Arithmetic Operations</h2>
+    <p>A typical arithmetic operation takes two numbers (or expressions) and produces a new number.</p>
+    <p id="demo"></p>
+ <script>
+let text = "";
+
+
+
+loop1: for (let j = 1; j < 5; j++) {
+
+  loop2: for (let i = 1; i < 5; i++) {
+
+    if (i === 3) { break loop1; }
+
+    text += i + "<br>";
+
+  }
+
+}
+
+document.getElementById("demo").innerHTML = text;
+ </script>
+</body>
+</html>
